@@ -10,7 +10,7 @@ regex = new RegExp(regex);
 
 let string = generate(regex);
 
-console.log(string);
+process.stdout.write(string);
 
 function generate(regex) {
 	const ctx = new Z3.Context();
