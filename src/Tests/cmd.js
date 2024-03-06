@@ -6,7 +6,7 @@ let b64regex = args[0];
 
 let regex = Buffer.from(b64regex, 'base64').toString('ascii');
 
-regex = new RegExp(regex);
+regex = new RegExp("^" + regex + "$");
 
 let string = generate(regex);
 
